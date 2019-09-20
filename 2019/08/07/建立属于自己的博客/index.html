@@ -17,7 +17,7 @@
     
 
     <meta name="description" content="前言：这是我第一次在GitHub上完成的个人博客。希望它能一直激励我前进，故取名为学习之路，我用它来记录我学习的历程以及遇到的问题。于是第一篇便用来记录我建立博客的过程。   准备工作在做博客之前应该先了解有哪些建立的方法，找一个适合自己的方法，我使用的方法就是用GitHub里的博客框架hexo来做，hexo使用markdown来分析文章，简单快捷，最主要还是用GitHub就可以免费建立静态网站不">
-<meta name="keywords" content="学习,hexo">
+<meta name="keywords" content="hexo,学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="建立属于自己的博客 | 学习之路">
 <meta property="og:url" content="http://yoursite.com/2019/08/07/建立属于自己的博客/index.html">
@@ -25,7 +25,7 @@
 <meta property="og:description" content="前言：这是我第一次在GitHub上完成的个人博客。希望它能一直激励我前进，故取名为学习之路，我用它来记录我学习的历程以及遇到的问题。于是第一篇便用来记录我建立博客的过程。   准备工作在做博客之前应该先了解有哪些建立的方法，找一个适合自己的方法，我使用的方法就是用GitHub里的博客框架hexo来做，hexo使用markdown来分析文章，简单快捷，最主要还是用GitHub就可以免费建立静态网站不">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/2019/08/07/建立属于自己的博客/博客.png">
-<meta property="og:updated_time" content="2019-08-08T04:50:35.380Z">
+<meta property="og:updated_time" content="2019-09-20T02:53:04.953Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="建立属于自己的博客 | 学习之路">
 <meta name="twitter:description" content="前言：这是我第一次在GitHub上完成的个人博客。希望它能一直激励我前进，故取名为学习之路，我用它来记录我学习的历程以及遇到的问题。于是第一篇便用来记录我建立博客的过程。   准备工作在做博客之前应该先了解有哪些建立的方法，找一个适合自己的方法，我使用的方法就是用GitHub里的博客框架hexo来做，hexo使用markdown来分析文章，简单快捷，最主要还是用GitHub就可以免费建立静态网站不">
@@ -200,7 +200,7 @@ classes that you can use:
 <h3 id="2、搭建GitHub"><a href="#2、搭建GitHub" class="headerlink" title="2、搭建GitHub"></a>2、搭建GitHub</h3><h5 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h5><p>在GitHub中点击New repository建立，名字格式为：yourname.github.io。<br>InInitialize this repository with a README选项可勾。<br>回到cmd控制台 （设置github用户名 和邮箱）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name&quot;your name&quot;</span><br><span class="line">git config --global user.email &quot;your email&quot;</span><br></pre></td></tr></table></figure>
 
-<h5 id="创建、设置SSH"><a href="#创建、设置SSH" class="headerlink" title="创建、设置SSH"></a>创建、设置SSH</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail@example.com        #生成SSH</span><br></pre></td></tr></table></figure>
+<h5 id="创建、设置SSH"><a href="#创建、设置SSH" class="headerlink" title="创建、设置SSH"></a>创建、设置SSH</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your email@example.com&quot;        #生成SSH</span><br></pre></td></tr></table></figure>
 
 <p>在生成SSH的文件夹（默认为C:\Users\Administrator.ssh）找到id_rsa.pub文件复制里面的所有内容。<br>在GitHub网站里进入setting-SSH and GPG keys添加新的ssh key。title随便取，把刚才复制的部分放进key里。</p>
 <h3 id="3、设置hexo"><a href="#3、设置hexo" class="headerlink" title="3、设置hexo"></a>3、设置hexo</h3><h5 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h5><p>在博客文件夹用编译器打开_config.yml,修改如下</p>
