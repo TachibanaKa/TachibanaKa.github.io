@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      微软输入法增加自定义格式 | 学习之路 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="John Doe">
+    
+    
+
+    <meta name="description" content="微软输入法增加自定义格式前言：在某些情况下，会需要输入法快捷输入某些内容。这时候可以自定义自带微软输入法的词库，这里以修改时间格式为例。 在默认的情况下，输入rq就会显示以下年月日时间格式。   改成xxxx-xx-xx的格式，技巧如下： 进入设置-时间和语言-语言，点击想要修改的输入法那一栏，会跳出“选项”按钮，点进去再点击使用的键盘输入法，依旧点击“选项”按钮。 就可以看到最终目的“词库和自学">
+<meta name="keywords" content="win10">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微软输入法增加自定义格式 | 学习之路">
+<meta property="og:url" content="http://yoursite.com/2019/10/05/微软输入法增加自定义格式/index.html">
+<meta property="og:site_name" content="学习之路">
+<meta property="og:description" content="微软输入法增加自定义格式前言：在某些情况下，会需要输入法快捷输入某些内容。这时候可以自定义自带微软输入法的词库，这里以修改时间格式为例。 在默认的情况下，输入rq就会显示以下年月日时间格式。   改成xxxx-xx-xx的格式，技巧如下： 进入设置-时间和语言-语言，点击想要修改的输入法那一栏，会跳出“选项”按钮，点进去再点击使用的键盘输入法，依旧点击“选项”按钮。 就可以看到最终目的“词库和自学">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://yoursite.com/2019/10/05/微软输入法增加自定义格式/默认.png">
+<meta property="og:image" content="http://yoursite.com/2019/10/05/微软输入法增加自定义格式/修改.png">
+<meta property="og:updated_time" content="2019-10-05T09:12:46.421Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="微软输入法增加自定义格式 | 学习之路">
+<meta name="twitter:description" content="微软输入法增加自定义格式前言：在某些情况下，会需要输入法快捷输入某些内容。这时候可以自定义自带微软输入法的词库，这里以修改时间格式为例。 在默认的情况下，输入rq就会显示以下年月日时间格式。   改成xxxx-xx-xx的格式，技巧如下： 进入设置-时间和语言-语言，点击想要修改的输入法那一栏，会跳出“选项”按钮，点进去再点击使用的键盘输入法，依旧点击“选项”按钮。 就可以看到最终目的“词库和自学">
+<meta name="twitter:image" content="http://yoursite.com/2019/10/05/微软输入法增加自定义格式/默认.png">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">学习之路</a></h1>
+        <hr class="panel-cover__divider">
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title class>关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title class>归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">微软输入法增加自定义格式</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2019-10-05" class="post-meta__date date">2019-10-05</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+            <font class="categories">
+            &#8226; 分类:
+            <a class="categories-link" href="/categories/win10/">win10</a>
+            </font>
+          
+
+          
+             &#8226; 标签:
+            <font class="tags">
+              <a class="tags-link" href="/tags/win10/">win10</a>
+            </font>
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h3 id="微软输入法增加自定义格式"><a href="#微软输入法增加自定义格式" class="headerlink" title="微软输入法增加自定义格式"></a>微软输入法增加自定义格式</h3><p>前言：在某些情况下，会需要输入法快捷输入某些内容。这时候可以自定义自带微软输入法的词库，这里以修改时间格式为例。</p>
+<p>在默认的情况下，输入rq就会显示以下年月日时间格式。</p>
+<img src="/2019/10/05/微软输入法增加自定义格式/默认.png" title="默认">
+
+<p>改成xxxx-xx-xx的格式，技巧如下：</p>
+<p>进入设置-时间和语言-语言，点击想要修改的输入法那一栏，会跳出<strong>“选项”</strong>按钮，点进去再点击使用的键盘输入法，依旧点击<strong>“选项”</strong>按钮。</p>
+<p>就可以看到最终目的<strong>“词库和自学习”</strong>，点击<strong>“添加或编辑自定义短语”</strong>添加以下短语。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%yyyy%-%MM%-%dd% %HH%:%mm%:%ss% +0800</span><br></pre></td></tr></table></figure>
+
+<img src="/2019/10/05/微软输入法增加自定义格式/修改.png" title="修改">
+
+<p>添加其他短语也是一样的步骤。</p>
+<h5 id="需要注意的是，只能点添加的时候这么写，如果是在原有短语上编辑就会导致时间永远固定在编辑成功的那一秒。"><a href="#需要注意的是，只能点添加的时候这么写，如果是在原有短语上编辑就会导致时间永远固定在编辑成功的那一秒。" class="headerlink" title="需要注意的是，只能点添加的时候这么写，如果是在原有短语上编辑就会导致时间永远固定在编辑成功的那一秒。"></a>需要注意的是，只能点添加的时候这么写，如果是在原有短语上编辑就会导致时间永远固定在编辑成功的那一秒。</h5>
+  </section>
+
+  <section class="post-comments">
+
+    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
+    
+</section>
+
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2019-2022. <a href="TachibanaKa.github.io">个人博客</a>   <span>学习 | 记录</span></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
